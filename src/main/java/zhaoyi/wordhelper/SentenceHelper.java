@@ -1,10 +1,12 @@
 
 package zhaoyi.wordhelper;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -13,12 +15,65 @@ public class SentenceHelper extends WordHelper {
 
 	@Override
 	Collection<Word> buildWords(List<Map<String, String>> raw_words) {
-		List<Word> words = raw_words.stream().map(v -> new Sentence((String) v.get("word"), (String) v.get("sound"),
-				(String) v.get("desc"), (String) v.get("sentence"))).collect(Collectors.toList());
+		List<Word> words = raw_words.stream().map(v -> {
+			if(randomWord){
+				String sentence = v.get("sentence");
+				List<String> wordLst = extractWord(sentence);
+				int len = wordLst.size();
+				int n = new Double(Math.ceil(len * 0.4)).intValue();
+				int k = len;
+				int[] indexes = Util.nkRandom(n, k, true);
+				Set<String> wordSet = new HashSet();
+				for(int i : indexes){
+					wordSet.add(wordLst.get(i));
+				}
+				String wordStr = Util.join(wordSet, ",");
+				return new Sentence(wordStr, 
+						v.get("sound"),
+						v.get("desc"), 
+						v.get("sentence"));
+			}else{
+				if(!v.containsKey("word")){
+					return null;
+				}
+				return new Sentence(v.get("word"), 
+						v.get("sound"),
+						v.get("desc"), 
+						v.get("sentence"));
+			}
+		}).filter(v->v != null).collect(Collectors.toList());
 		if (!this.inorder) {
 			return new HashSet<Word>(words);
 		}
 		return words;
+	}
+	
+	public List extractWord(String sentence){
+		
+		byte[] bytes=sentence.getBytes();
+		
+		List list=new ArrayList<String>();
+		
+		StringBuffer buffer=new StringBuffer();
+		
+		for (int i = 0; i <bytes.length ; i++) {
+			
+			if ((bytes[i]>=65 && bytes[i]<=90)||(bytes[i]>=97 && bytes[i]<=122)){
+				
+				buffer.append(sentence.charAt(i));
+				
+			}else {
+				
+				list.add(buffer.toString());
+				
+				buffer=new StringBuffer();
+				
+			}
+			
+		}
+		
+		return list;
+		
 	}
 
 	String genQuestion(Word wordBox, String desc, String hideWords) {

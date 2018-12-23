@@ -4,6 +4,7 @@ package zhaoyi.wordhelper;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.stream.Collectors;
 
 public class Util {
 	public static int kRandom(int k) {
@@ -20,5 +21,9 @@ public class Util {
 			col.add(val);
 		}
 		return col.stream().mapToInt(Integer::valueOf).toArray();
+	}
+	
+	public static String join(Collection<String> col, String separator){
+		return col.stream().collect(Collectors.joining(separator));
 	}
 }

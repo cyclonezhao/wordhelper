@@ -14,6 +14,7 @@ public class Main {
 			boolean sentence = false;
 			boolean inorder = false;
 			boolean talkmode = false;
+			boolean randomword = false;
 			double rate;
 			String arg;
 			for (rate = 0.4D; i < e; ++i) {
@@ -34,8 +35,10 @@ public class Main {
 				} else if ("talkmode".equalsIgnoreCase(arg)) {
 					talkmode = true;
 					inorder = true;
+				} else if ("randomword".equalsIgnoreCase(arg)) {
+					randomword = true;
 				} else if ("-h".equalsIgnoreCase(arg)) {
-					System.out.println("-f file [sound] [sentence] [inorder] [-rate ratevalue] [talkmode] [-h]");
+					System.out.println("-f file [sound] [sentence] [inorder] [-rate ratevalue] [talkmode] [randomword] [-h]");
 					return;
 
 				}
@@ -52,6 +55,7 @@ public class Main {
 			wordhelper.setInorder(inorder);
 			wordhelper.setRate(rate);
 			wordhelper.setTalkmode(talkmode);
+			wordhelper.setRandomWord(randomword);
 			wordhelper.exec();
 		} catch (Exception arg10) {
 

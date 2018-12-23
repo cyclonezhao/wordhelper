@@ -28,6 +28,7 @@ public class WordHelper {
 	boolean inorder;
 	double rate = 0.4;
 	boolean talkmode;
+	boolean randomWord;
 
 	public void exec() throws Exception {
 		block1: {
@@ -160,5 +161,9 @@ public class WordHelper {
 
 	public void setTalkmode(boolean talkmode) {
 		this.talkmode = talkmode;
+	}
+
+	public void setRandomWord(boolean randomWord) {
+		this.randomWord = randomWord;
 	}
 }
