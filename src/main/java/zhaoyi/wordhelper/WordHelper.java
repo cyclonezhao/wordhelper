@@ -116,6 +116,9 @@ public class WordHelper {
 	}
 
 	String hideWordGroup(String word) {
+		if(rate == 1d) {
+			return "*";
+		}
 		String[] arr = word.split(" ");
 		return Stream.of(arr).map(this::hideWord).collect(Collectors.joining(" "));
 	}
