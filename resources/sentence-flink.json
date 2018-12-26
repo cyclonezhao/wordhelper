@@ -5,6 +5,7 @@
 {"word":"declarative","sentence":"The Table API is a declarative DSL centered around tables"},
 {"word":"sinks","sentence":"Each dataflow starts with one or more sources and ends in one or more sinks."},
 {"word":"resemble,arbitrary,acyclic","sentence":"The dataflows resemble arbitrary directed acyclic graphs (DAGs). "},
+{"word":"resemble","sentence":"So, with this information entered, you have provided all the necessary deployment information, and your deployment configuration should resemble the one shown in Figure 5.","desc":"...类似于图5那样的"},
 {"word":"gloss over,simplicity","sentence":"Although special forms of cycles are permitted via iteration constructs, for the most part we will gloss over this for simplicity."},
 {"word":"correspondence","sentence":"Often there is a one-to-one correspondence between the transformations in the programs and the operators in the dataflow."},
 {"word":"inherently,parallel,distributed,partitions,independent,threads,machines,containers","sentence":"Programs in Flink are inherently parallel and distributed. During execution, a stream has one or more stream partitions, and each operator has one or more operator subtasks. The operator subtasks are independent of one another, and execute in different threads and possibly on different machines or containers."},
@@ -13,8 +14,13 @@
 {"word":"non-determinism","sentence":"..., but the parallelism does introduce non-determinism regarding the order in which the aggregated results for different keys arrive at the sink."},
 {"word":"scoped","sentence":"Instead, aggregates on streams (counts, sums, etc), are scoped by windows, such as “count over the last 5 minutes”, or “sum of the last 100 elements”."},
 {"word":"distinguishes,tumbling,punctuated,gap,inactivity","sentence":"One typically distinguishes different types of windows, such as tumbling windows (no overlap), sliding windows (with overlap), and session windows (punctuated by a gap of inactivity)."},
+{"word":"punctuated", "sentence":"The game was punctuated by a series of injuries.","desc":"那场比赛因不时有人受伤而中断。"},
+{"word":"punctuate,dividend", "sentence":"And to punctuate that guidance, the company raised its dividend by 8%.","desc":"为了强调这个财务导向，这家公司还把它的股息提高到了8%。"},
+{"word":"respiratory system,punctuate", "sentence":"I had no idea what the respiratory system did and I couldn't punctuate a sentence.","desc":"我对呼吸系统能做什么一无所知，我也不会给一个句子标上标点符号。"},
 {"word":"Ingestion","sentence":"Ingestion time is the time when an event enters the Flink dataflow at the source operator."},
 {"word":"guaranteeing consistency,overhead","sentence":"Aligning the keys of streams and state makes sure that all state updates are local operations, guaranteeing consistency without transaction overhead."},
 {"word":"resumed,semantics,restoring,replaying","sentence":"A streaming dataflow can be resumed from a checkpoint while maintaining consistency (exactly-once processing semantics) by restoring the state of the operators and replaying the events from the point of the checkpoint."},
+{"word":"resumed","sentence":"After the war he resumed his duties at Wellesley College.","desc":"那场战争之后，他恢复了在韦尔斯利学院的任职。"},
+{"word":"premature,speculate,resumption,negotiations","sentence":"It is premature to speculate about the resumption of negotiations.","desc":"考虑谈判的恢复还太早。"},
 {"word":"minor","sentence":"..., with minor exceptions","desc":"小小的例外"}
 ]

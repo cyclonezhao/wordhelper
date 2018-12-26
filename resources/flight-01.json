@@ -1,12 +1,12 @@
 [
 {"word":"would,like,confirm,flight","sentence":"I would like to confirm my flight."},
-{"word":"get,ticket,number","sentence":"Can I get your ticket number?"},
+{"word":"get,ticket number","sentence":"Can I get your ticket number?"},
 {"word":"number","sentence":"The number is 45-6-43."},
 {"word":"scheduled,depart,June,at,correct","sentence":"You are scheduled to depart on June 15th at 1:00 pm. Is this correct?"},
 {"word":"","sentence":"Yes it is."},
 {"word":"anybody,else,traveling,with","sentence":"Is anybody else traveling with you?"},
 {"word":"","sentence":"Yes, my wife."},
-{"word":"have,other,ticket","sentence":"Can I have the other ticket number?"},
+{"word":"have,other ticket","sentence":"Can I have the other ticket number?"},
 {"word":"","sentence":"It is 45-6-44."},
 {"word":"tickets,been,confirmed,arrive,airport,before,flight,departs,calling","sentence":"Your tickets have been confirmed. Please arrive at the airport 3 hours before your flight departs. Thank you for calling."}
 ]
