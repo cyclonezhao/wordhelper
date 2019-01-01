@@ -1,0 +1,134 @@
+[
+{"word":"auxiliary,tenses,moods,voices","sentence":"An auxiliary verb helps the main (full) verb and is also called a \"helping verb.\" With auxiliary verbs, you can write sentences in different tenses, moods, or voices. ","desc":""},
+{"word":"am taking","sentence":"I am taking a bath.","desc":"take,Used in progressive sentences"},
+{"word":"is preparing","sentence":"She is preparing dinner for us.","desc":"prepare,Used in progressive sentences"},
+{"word":"have been studying","sentence":"They have been studying all night.","desc":"study,Used in progressive sentences"},
+{"word":"was given","sentence":"I was given a free meal.","desc":"give,Used in passive sentences"},
+{"word":"was seen","sentence":"He was seen by fans at the airport.","desc":"see,Used in passive sentences"},
+{"word":"has been sung","sentence":"This song has been sung by all nations.","desc":"sing,Used in passive sentences"},
+{"word":"do not know","sentence":"I do not know the truth.","desc":"know,Used in negative sentences"},
+{"word":"doesn’t agree","sentence":"She doesn’t agree with me.","desc":"agree,Used in negative sentences"},
+{"word":"didn’t arrive","sentence":"They didn’t arrive here yet.","desc":"arrive,Used in negative sentences"},
+{"word":"Do you want","sentence":"Do you want to have another one?","desc":"you,want,Used in questions"},
+{"word":"Did he finish","sentence":"Did he finish his homework?","desc":"he,finish,Used in questions"},
+{"word":"Do we need","sentence":"Do we need to keep going straight?","desc":"we,need,Used in questions"},
+{"word":"have been following","sentence":"I have been following you for a mile.","desc":"follow,Used in perfect sentences"},
+{"word":"have done","sentence":"We have done a lot so far.","desc":"do,Used in perfect sentences"},
+{"word":"had been queen","sentence":"She had been queen of the town.","desc":"queen,Used in perfect sentences"},
+{"word":"will take","sentence":"I will take this duty.","desc":"take,Used to express desire, preference, choice, or consent"},
+{"word":"Will you stop","sentence":"Will you stop talking like that?","desc":"stop,Used to express desire, preference, choice, or consent"},
+{"word":"will rain","sentence":"It will rain tomorrow.","desc":"rain,Used to express the future"},
+{"word":"will spread","sentence":"The news will spread soon.","desc":"spread,Used to express the future"},
+{"word":"will hold","sentence":"This bucket will hold two gallons of water.","desc":"hold,Used to express capacity or capability:"},
+{"word":"will take","sentence":"This airplane will take 200 passengers.","desc":"take,Used to express capacity or capability:"},
+{"word":"will do","sentence":"I will do it as you say.","desc":"do,Used to express determination, insistence, or persistence"},
+{"word":"would rather go","sentence":"I would rather go shopping today.","desc":"go,Often used in auxiliary functions with rather to express preference"},
+{"word":"We’d rather say","sentence":"We’d rather say something than stay quiet.","desc":"we,say,Often used in auxiliary functions with rather to express preference"},
+{"word":"would like to have","sentence":"I would like to have one more pencil.","desc":"like,have,Used to express a wish or desire"},
+{"word":"would be","sentence":"If I were you, I would be so happy.","desc":"be,Used to express contingency or possibility"},
+{"word":"would work","sentence":"Normally, we would work until 6 p.m.","desc":"work,Used to express routine or habitual things"},
+{"word":"Shall","sentence":"Shall we dance?","desc":"to ask questions politely"},
+{"word":"Shall","sentence":"Shall I go now?","desc":"to ask questions politely"},
+{"word":"shall","sentence":"Let’s drink, shall we?","desc":"to ask questions politely"},
+{"word":"shall","sentence":"You shall abide by the law.","desc":"Often used in formal settings to deliver obligation or requirement"},
+{"word":"shall","sentence":"There shall be no trespassing on this property.","desc":"Often used in formal settings to deliver obligation or requirement"},
+{"word":"shall","sentence":"Students shall not enter this room.","desc":"Often used in formal settings to deliver obligation or requirement"},
+{"word":"should","sentence":"You should rest at home today.","desc":"to express an opinion, suggestion, preference, or idea"},
+{"word":"should","sentence":"I should take a bus this time.","desc":"to express an opinion, suggestion, preference, or idea"},
+{"word":"should","sentence":"He should be more thoughtful in the decision-making process.","desc":"to express an opinion, suggestion, preference, or idea"},
+{"word":"should","sentence":"You should have seen it. It was really beautiful.","desc":"to express that you wish something had happened but it didn’t or couldn’t "},
+{"word":"should","sentence":"I should have completed it earlier to meet the deadline.","desc":"to express that you wish something had happened but it didn’t or couldn’t "},
+{"word":"should","sentence":"We should have visited the place on the way.","desc":"to express that you wish something had happened but it didn’t or couldn’t "},
+{"word":"should","sentence":"What should we do now?","desc":"to ask for someone’s opinion"},
+{"word":"Should","sentence":"Should we continue our meeting?","desc":"to ask for someone’s opinion"},
+{"word":"Should","sentence":"Should we go this way?","desc":"to ask for someone’s opinion"},
+{"word":"should","sentence":"Where should we go this summer?","desc":"to ask for someone’s opinion"},
+{"word":"should","sentence":"There should be an old city hall building here.","desc":"to say something expected or correct"},
+{"word":"should","sentence":"Everybody should arrive by 6 p.m.","desc":"to say something expected or correct"},
+{"word":"should","sentence":"We should be there this evening.","desc":"to say something expected or correct"},
+{"word":"can","sentence":"I can make jewelry.","desc":"to express ability (to be able to do something)"},
+{"word":"can't","sentence":"He can’t speak French.","desc":"to express ability (to be able to do something)"},
+{"word":"Can","sentence":"Can you open this jar?","desc":"to express ability (to be able to do something)"},
+{"word":"Can","sentence":"Can I use your bathroom?","desc":"to ask for permission"},
+{"word":"Can","sentence":"Can I leave now?","desc":"to ask for permission"},
+{"word":"Can","sentence":"Can I raise the volume?","desc":"to ask for permission"},
+{"word":"Can","sentence":"Can I have more napkins?","desc":"to make requests or suggestions"},
+{"word":"Can","sentence":"Can I have the bill?","desc":"to make requests or suggestions"},
+{"word":"can","sentence":"You can take this spot if you like.","desc":"to make requests or suggestions"},
+{"word":"can","sentence":"You can do whatever you want.","desc":"to make requests or suggestions"},
+{"word":"could","sentence":"I could swim when I was young.","desc":"Describes an ability that someone had in the past"},
+{"word":"could","sentence":"You could see the boat sinking.","desc":"Describes an ability that someone had in the past"},
+{"word":"could","sentence":"They could tell he was nervous.","desc":"Describes an ability that someone had in the past"},
+{"word":"Could","sentence":"Could I take this jacket with me?","desc":"to express permission politely"},
+{"word":"could","sentence":"You could borrow my umbrella.","desc":"to express permission politely"},
+{"word":"Could","sentence":"Could you please let me pass you?","desc":"to express permission politely"},
+{"word":"Could","sentence":"Could I get you more water?","desc":"to express permission politely"},
+{"word":"could","sentence":"All of them could ride in the van.","desc":"to express possibility"},
+{"word":"could","sentence":"You could always stay at our house.","desc":"to express possibility"},
+{"word":"Could","sentence":"Could it be true?","desc":"to express possibility"},
+{"word":"could","sentence":"This plan could really work out.","desc":"to express possibility"},
+{"word":"May","sentence":"May I come in?","desc":"to ask for formal permission"},
+{"word":"May","sentence":"May I say something now?","desc":"to ask for formal permission"},
+{"word":"May","sentence":"May I ask one question?","desc":"to ask for formal permission"},
+{"word":"may","sentence":"She may agree with this plan.","desc":"to suggest something that is possible"},
+{"word":"may","sentence":"They may not be happy about what happened.","desc":"to suggest something that is possible"},
+{"word":"may","sentence":"It may shower tonight.","desc":"to suggest something that is possible"},
+{"word":"might","sentence":"He might have finished it.","desc":"to suggest a smaller possibility than may does"},
+{"word":"might","sentence":"I might go see a doctor.","desc":"to suggest a smaller possibility than may does"},
+{"word":"might","sentence":"I might not come this time.","desc":"to suggest a smaller possibility than may does"},
+{"word":"might","sentence":"It might be right.","desc":"to suggest a smaller possibility than may does"},
+{"word":"might","sentence":"You might have lost it.","desc":"to suggest a smaller possibility than may does"},
+{"word":"might","sentence":"The store might have been closed today.","desc":"to suggest a smaller possibility than may does"},
+{"word":"must","sentence":"I must complete the project by this week.","desc":"to express something formally required or necessary"},
+{"word":"must","sentence":"The government must provide health care for everybody.","desc":"to express something formally required or necessary"},
+{"word":"must","sentence":"Everyone must save the natural resources of the earth.","desc":"to express something formally required or necessary"},
+{"word":"must","sentence":"The building must have a fire alarm.","desc":"to express something formally required or necessary"},
+{"word":"must","sentence":"You must answer my question right now.","desc":"to express something formally required or necessary"},
+{"word":"must","sentence":"He must be a genius.","desc":"to show that something is very likely"},
+{"word":"must","sentence":"You must be joking!","desc":"to show that something is very likely"},
+{"word":"must","sentence":"There must be an accident.","desc":"to show that something is very likely"},
+{"word":"must","sentence":"She must be very tired.","desc":"to show that something is very likely"}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
