@@ -42,9 +42,6 @@ public class SentenceHelper extends WordHelper {
 						v.get("sentence"));
 			}
 		}).filter(v->v != null).collect(Collectors.toList());
-		if (!this.inorder) {
-			return new HashSet<Word>(words);
-		}
 		return words;
 	}
 	
