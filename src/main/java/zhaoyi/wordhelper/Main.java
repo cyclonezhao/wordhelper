@@ -15,6 +15,7 @@ public class Main {
 			boolean inorder = false;
 			boolean talkmode = false;
 			boolean randomword = false;
+			boolean extractword = false;
 			double rate;
 			String arg;
 			for (rate = 0.4D; i < e; ++i) {
@@ -40,23 +41,30 @@ public class Main {
 				} else if ("-h".equalsIgnoreCase(arg)) {
 					System.out.println("-f file [sound] [sentence] [inorder] [-rate ratevalue] [talkmode] [randomword] [-h]");
 					return;
-
+				} else if("extractword".equalsIgnoreCase(arg)) {
+					extractword = true;
 				}
 			}
 
-			WordHelper wordhelper;
-			if (sentence) {
-				wordhelper = new SentenceHelper();
-			} else { 
-				wordhelper = new WordHelper();
-				wordhelper.setSound(sound);
+			if(extractword) {
+				WordExtractor wordExtractor = new WordExtractor();
+				wordExtractor.setFile(file);
+				wordExtractor.exec();
+			}else {
+				WordHelper wordhelper;
+				if (sentence) {
+					wordhelper = new SentenceHelper();
+				} else { 
+					wordhelper = new WordHelper();
+					wordhelper.setSound(sound);
+				}
+				wordhelper.setFile(file);
+				wordhelper.setInorder(inorder);
+				wordhelper.setRate(rate);
+				wordhelper.setTalkmode(talkmode);
+				wordhelper.setRandomWord(randomword);
+				wordhelper.exec();
 			}
-			wordhelper.setFile(file);
-			wordhelper.setInorder(inorder);
-			wordhelper.setRate(rate);
-			wordhelper.setTalkmode(talkmode);
-			wordhelper.setRandomWord(randomword);
-			wordhelper.exec();
 		} catch (Exception arg10) {
 
 			arg10.printStackTrace();
