@@ -39,7 +39,7 @@ public class Main {
 				} else if ("randomword".equalsIgnoreCase(arg)) {
 					randomword = true;
 				} else if ("-h".equalsIgnoreCase(arg)) {
-					System.out.println("-f file [sound] [sentence] [inorder] [-rate ratevalue] [talkmode] [randomword] [-h]");
+					System.out.println("-f file [extractword] [sound] [sentence] [inorder] [-rate ratevalue] [talkmode] [randomword] [-h]");
 					return;
 				} else if("extractword".equalsIgnoreCase(arg)) {
 					extractword = true;
