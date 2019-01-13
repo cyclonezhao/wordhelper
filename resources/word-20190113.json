@@ -1,0 +1,23 @@
+[
+{"word":"mutually","sentence":"For example, a stakeholder may ask for some functionality within a specified timeframe, but these two needs (functionality and timeframe) are mutually exclusive.","desc":""},
+{"word":"encompasses","sentence":"The term system encompasses individual applications, systems in the traditional sense, subsystems, systems of systems, product lines, product families, whole enterprises, and other aggregations of interest.","desc":""},
+{"word":"encompass","sentence":"and I use the term fairly loosely in order to encompass the variety of architectural elements that we may encounter, including objects, technology components (such as an Enterprise JavaBean), services, program modules, legacy systems, packaged applications, and so on.","desc":""},
+{"word":"subsequent","sentence":"These questions, and others, will be answered in subsequent articles in this series.","desc":""},
+{"word":"consequence,refined","sentence":"As a consequence of requirements being refined, risks identified, executable software built, and lessons learned, the set of significant elements may change.","desc":""},
+{"word":"aesthetics","sentence":"Although other characteristics of these items exist, such as behavior, fitness-for-purpose, and even aesthetics, it is the structural characteristic that is the most familiar and the most-often mentioned.","desc":""},
+{"word":"consensus","sentence":"But that is exactly the point -- to show that these terms do exist in the industry, but that there is no consensus on their meaning.","desc":""},
+{"word":"homonyms,synonyms","sentence":"which results in different meanings for the same term (homonyms) and two or more terms meaning the same thing (synonyms).","desc":""},
+{"word":"peripheral","sentence":"A hardware architecture, which considers elements such as CPUs, memory, hard disks, peripheral devices such as printers, and the elements used to connect these elements.","desc":""},
+{"word":"codification","sentence":"Like a pattern, an architectural style represents a codification of experience, and it is good practice for architects to look for opportunities to reuse such experience.","desc":""},
+{"word":"ubiquitous","sentence":"Software is an essential element of the ubiquitous cell phone, as well as complex air traffic control systems.","desc":""},
+{"word":"eloquently","sentence":"Conversely, as eloquently described in Bass, Clements, and Kazman, the architecture may also influence its environment.","desc":""},
+{"word":"accommodation","sentence":"Conversely, if an architecture is not documented, then it is difficult (if not impossible) to prove that it meets the stated requirements in terms of addressing qualities such as maintainability, accommodation of best practices, and so on. ","desc":""},
+{"word":"albeit","sentence":"This similarity can be described as an architectural style, which can be thought of as a particular kind of pattern, albeit an often complex and composite pattern (a number of patterns applied together).","desc":""},
+{"word":"comprise","sentence":"The software architecture of a program or computing system is the structure or structures of the system, which comprise software elements, the externally visible properties of those elements, and the relationships among them.","desc":""},
+{"word":"comprise","sentence":"The software architecture of a system or a collection of systems consists of all the important design decisions about the software structures and the interactions between those structures that comprise the systems.","desc":""},
+{"word":"tradeoffs","sentence":"Making tradeoffs is therefore an essential aspect of the architecting process, and negotiation, an essential characteristic of the architect.","desc":""},
+{"word":"tradeoffs","sentence":"In the systems engineering field, tradeoffs are made regarding the use of software, hardware, and people.","desc":""},
+{"word":"pitfall","sentence":"It is interesting to note that systems engineering is specifically concerned with treating software and hardware (as well as people) as peers, thus avoiding the pitfall where hardware is treated as a second-class citizen to the software and is simply a vehicle for executing the software, or where software is treated as a second-class citizen with respect to the hardware and is simply a vehicle for making the hardware function as desired.","desc":""},
+{"word":"pitfall","sentence":"this is a pitfall that is best avoided, since the result is typically a less-than-ideal architecture.","desc":""}
+{"word":"retail","sentence":"Even traditional organizations, such as those found in the finance, retail, and public sectors, depend heavily on software.","desc":""}
+]
