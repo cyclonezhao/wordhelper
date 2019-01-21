@@ -18,6 +18,6 @@
 {"word":"tradeoffs","sentence":"Making tradeoffs is therefore an essential aspect of the architecting process, and negotiation, an essential characteristic of the architect.","desc":""},
 {"word":"tradeoffs","sentence":"In the systems engineering field, tradeoffs are made regarding the use of software, hardware, and people.","desc":""},
 {"word":"pitfall","sentence":"It is interesting to note that systems engineering is specifically concerned with treating software and hardware (as well as people) as peers, thus avoiding the pitfall where hardware is treated as a second-class citizen to the software and is simply a vehicle for executing the software, or where software is treated as a second-class citizen with respect to the hardware and is simply a vehicle for making the hardware function as desired.","desc":""},
-{"word":"pitfall","sentence":"this is a pitfall that is best avoided, since the result is typically a less-than-ideal architecture.","desc":""}
+{"word":"pitfall","sentence":"this is a pitfall that is best avoided, since the result is typically a less-than-ideal architecture.","desc":""},
 {"word":"retail","sentence":"Even traditional organizations, such as those found in the finance, retail, and public sectors, depend heavily on software.","desc":""}
 ]
