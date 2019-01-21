@@ -6,9 +6,9 @@ from os import path
 
 # adding arguments description which is shown in command line by typing "-h"
 parser = argparse.ArgumentParser()
-parser.add_argument("file", help="the fullpath of the file which gonna be interpreted as input")
+parser.add_argument("file", help="the full path of the file which gonna be interpreted as input")
 parser.add_argument("-inorder", help="if true it will show each exam item in original order.", action="store_true")
-parser.add_argument("-rate", help="indicate the rate which calculate the count of letters that will be replaced by '*' by multipling the length of the word.", default="0.4", type=float)
+parser.add_argument("-rate", help="indicate the rate which calculate the count of letters that will be replaced by '*' by multiplying the length of the word.", default="0.4", type=float)
 parser.add_argument("-extractword", help="run in Extract Word Mode rather than Exam Mode as default.", action="store_true")
 
 # parsing arguments from the user command line
@@ -105,11 +105,16 @@ else:
                         inputWord = choose
                 else:
                     stillTestThisWord = False
-        
+        return errs
     
     words = json.loads(open(fileInput).read())
-    while len(testWords(words)) > 0:
-        choose = raw_input("You have %s errors, prepare to review. Typing 0 and pressing ENTER if you want to exit.")
-        if "0" == choose:
+    while True:
+        words = testWords(words)
+        errCount = len(words)
+        if errCount > 0:
+            choose = raw_input("\nYou have %s errors, prepare to review. Typing 0 and pressing ENTER if you want to exit." % errCount)
+            if "0" == choose:
+                break
+        else:
             break
-    raw_input("Test finished, press any key to exit, See you!")
+    raw_input("\nTest finished, press any key to exit, See you!")
