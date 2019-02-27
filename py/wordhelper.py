@@ -62,7 +62,10 @@ else:
         hidedPhrases = []
         for phrase in arr:
             wordArr = phrase.split(" ")
-            hidedPhrases.append(" ".join(list(map(hideSingleWord, wordArr))))
+            if rate == 1:
+                hidedPhrases.append("*")
+            else:
+                hidedPhrases.append(" ".join(list(map(hideSingleWord, wordArr))))
         return ",".join(hidedPhrases)
     
     def genQuestion(wordBox, hidedWords):
@@ -74,7 +77,7 @@ else:
             
         tips = "%s\n-------------------------\n%s" % (sentence, hidedWords)
         if 'desc' in wordBox and len(wordBox.get("desc")) > 0:
-            "%s\n%s\n-------------------------\n%s" % (sentence,wordBox.get("desc"), hidedWords)
+            tips = "%s\n%s\n-------------------------\n%s" % (sentence,wordBox.get("desc"), hidedWords)
         return tips
     
     def testWords(words):
