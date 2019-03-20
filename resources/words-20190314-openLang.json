@@ -1,0 +1,22 @@
+[
+    {"word":"awesome","sentence":"You are awesome; That's awesome","desc":""},
+    {"word":"terrific","sentence":"The food and the service there was terrific.","desc":""},
+    {"word":"incredible","sentence":"The wildflowers will be incredible after this rain.","desc":""},
+    {"word":"incredibly","sentence":"Their father was incredibly good-looking.","desc":""},
+    {"word":"impressive","sentence":"That's an impressive shot","desc":""},
+    {"word":"phenomenal","sentence":"Exports of Australian wine are growing at a phenomenal rate.","desc":""},
+    {"word":"extraordinary","sentence":"We've made extraordinary progress as a society in that regard.","desc":""},
+    {"word":"extraordinary","sentence":"The task requires extraordinary patience and endurance.","desc":""},
+    {"word":"man","sentence":"You are the man!","desc":"only man"},
+    {"word":"best","sentence":"You are the best!","desc":"both man and woman"},
+    {"word":"way","sentence":"Way to go!","desc":""},
+    {"word":"capable","sentence":"She is capable of singing.","desc":""},
+    {"word":"able","sentence":"She is able to sing.","desc":""},
+    {"word":"competent","sentence":"He was a loyal, distinguished and very competent civil servant.","desc":""},
+    {"word":"competent","sentence":"Most adults do not feel competent to deal with a medical emergency involving a child.","desc":""},
+    {"word":"talent","sentence":"He has a talent for English.","desc":""},
+    {"word":"gift","sentence":"As a youth he discovered a gift for teaching.","desc":""},
+    {"word":"accomplished","sentence":"She is an accomplished painter and a prolific author of stories for children.","desc":""},
+    {"word":"sick","sentence":"The band is sick.","desc":""},
+    {"word":"wicked","sentence":"The weather is wicked today.","desc":""}
+]
