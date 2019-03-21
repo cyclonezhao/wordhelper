@@ -73,7 +73,8 @@ else:
         wordArr = wordBox.get("word").split(",")
         hidedWordArr = hidedWords.split(",")
         for idx, word in enumerate(wordArr):
-            sentence = sentence.replace(word, hidedWordArr[idx])
+            insensitive_hippo = re.compile(re.escape(word), re.IGNORECASE)
+            sentence = insensitive_hippo.sub(hidedWordArr[idx], sentence)
             
         tips = "%s\n-------------------------\n%s" % (sentence, hidedWords)
         if 'desc' in wordBox and len(wordBox.get("desc")) > 0:
@@ -94,7 +95,7 @@ else:
             
             tips = genQuestion(wordBox, hidedWord)
             ques = "\n%s/%s\n%s\n" % (index, count, tips)
-            inputWord = raw_input(ques)
+            inputWord = raw_input(ques.encode('utf-8'))
             
             stillTestThisWord = True
             while(stillTestThisWord):
