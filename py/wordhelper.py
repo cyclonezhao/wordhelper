@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import re
 from collections import Counter
 import argparse
@@ -95,7 +96,7 @@ else:
             
             tips = genQuestion(wordBox, hidedWord)
             ques = "\n%s/%s\n%s\n" % (index, count, tips)
-            inputWord = raw_input(ques.encode('utf-8'))
+            inputWord = raw_input(ques)
             
             stillTestThisWord = True
             while(stillTestThisWord):
