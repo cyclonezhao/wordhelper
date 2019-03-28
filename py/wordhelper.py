@@ -100,7 +100,12 @@ else:
             
             stillTestThisWord = True
             while(stillTestThisWord):
-                if not inputWord.lower() == word.lower():
+                if inputWord == "":
+                    if wordBox not in errs:
+                        errs.append(wordBox)
+                    raw_input("%s\nPress any key to continue." % word)
+                    stillTestThisWord = False
+                elif not inputWord.lower() == word.lower():
                     if wordBox not in errs:
                         errs.append(wordBox)
                     choose = raw_input("Wrong spelling, please try again, or type 0 and press ENTER to show the right answer.\n")
