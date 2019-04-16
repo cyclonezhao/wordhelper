@@ -32,19 +32,27 @@ def getContent(word):
         
         # 获取词性
         vt_re = re.compile(r"<span .+?>(.+)</span>")
-        vt = "[" + vt_re.findall(content)[0] + "]"
+        vt = vt_re.findall(content)
+        if len(vt) > 0:
+            vt = "[" + vt_re.findall(content)[0] + "]"
         
         #  过滤词性 span
-        beginIndex = content.index("</span>")+7
-        content = content[beginIndex:]
-        endIndex = content.find("<span")
-        if endIndex > 0:
-            content = content[:endIndex]
+        beginIndex = content.find("</span")
+        if beginIndex > 0:
+            beginIndex += 7
+            content = content[beginIndex:]
+            endIndex = content.find("<span")
+            if endIndex > 0:
+                content = content[:endIndex]
         
         # 去掉关键词的 b 标签
         content = re.compile(r"</?b>").sub("", content)
         # 去掉中文注释
 #         content = content[:content.index(".")+1]
+
+        # 特殊情况跳过
+        if content.find("see also") > 0:
+            continue
         
         results.append({"vt": vt, "keyword": word, "desc": content.strip()})
 
