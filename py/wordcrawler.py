@@ -44,7 +44,7 @@ def getContent(word):
         # 去掉关键词的 b 标签
         content = re.compile(r"</?b>").sub("", content)
         # 去掉中文注释
-        content = content[:content.index(".")+1]
+#         content = content[:content.index(".")+1]
         
         results.append({"vt": vt, "keyword": word, "desc": content.strip()})
 
@@ -52,11 +52,11 @@ def getContent(word):
 parser = argparse.ArgumentParser()
 parser.add_argument("file", help="the full path of the file which gonna be interpreted as input")
 args = parser.parse_args()
-fileInput = args.file
+fileNameInput = args.file
     
 # 读取要查的词
-fileExclusive = open(fileInput, "rt")
-words = fileExclusive.read().split("\n")
+fileinput = open(fileNameInput, "rt")
+words = fileinput.read().split("\n")
 
 #解析
 import operator
@@ -69,7 +69,7 @@ contentFormatted = map(lambda v: '{"word":"%s","sentence":"%s %s"}' % (v.get("ke
 output = '[' + '\n,'.join(contentFormatted) + ']'
 
 # 输出
-dirName = path.dirname(fileInput)
+dirName = path.dirname(fileNameInput)
 outputName = "wordsFromYoudao.json"
 if len(dirName) > 0:
     outputName = "%s%swordsFromYoudao.json" % (dirName, path.sep)
