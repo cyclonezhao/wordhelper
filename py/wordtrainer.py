@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 import re
-from collections import Counter
 import argparse
 from pip._vendor.distlib.compat import raw_input
-from os import path
 
 # adding arguments description which is shown in command line by typing "-h"
 parser = argparse.ArgumentParser()
