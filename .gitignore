@@ -1,0 +1,5 @@
+/py/test
+/.project
+/.settings/org.eclipse.core.resources.prefs
+/.pydevproject
+/testresource
