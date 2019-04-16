@@ -16,6 +16,10 @@ def getContent(word):
     html = getHtml(url)
     # 最终结果
     results = []
+    # 获取音标
+    sound = re.compile(r'<em class="additional spell phonetic">(.+?)</em>').findall(html)
+    if len(sound) > 0:
+        sound = sound[0]
     # 分割内容
     while True:
         content = html.partition('<div class="collinsMajorTrans">')
@@ -31,7 +35,7 @@ def getContent(word):
         content = content[beginIndex:endIndex]
         
         # 获取词性
-        vt_re = re.compile(r"<span .+?>(.+)</span>")
+        vt_re = re.compile(r"<span .+?>(.+?)</span>")
         vt = vt_re.findall(content)
         if len(vt) > 0:
             vt = "[" + vt_re.findall(content)[0] + "]"
@@ -54,7 +58,7 @@ def getContent(word):
         if content.find("see also") > 0:
             continue
         
-        results.append({"vt": vt, "keyword": word, "desc": content.strip()})
+        results.append({"vt": vt, "keyword": word, "desc": content.strip(), "sound": sound})
 
 # 输入文件
 parser = argparse.ArgumentParser()
@@ -73,7 +77,7 @@ from functools import reduce
 contents = reduce(operator.add, map(lambda v: getContent(v), words))
 
 #格式化转换
-contentFormatted = map(lambda v: '{"word":"%s","sentence":"%s %s"}' % (v.get("keyword"),v.get("vt"),v.get("desc")), contents)
+contentFormatted = map(lambda v: '{"word":"%s","sentence":"%s %s %s"}' % (v.get("keyword"),v.get("vt"),v.get("sound"),v.get("desc")), contents)
 output = '[' + '\n,'.join(contentFormatted) + ']'
 
 # 输出
