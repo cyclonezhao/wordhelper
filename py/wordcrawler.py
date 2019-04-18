@@ -11,11 +11,23 @@ def getHtml(url):
     html = page.read()
     return html.decode('utf-8')
 
-def getContent(word):
-    url = "https://dict.youdao.com/w/%s" % word
+def getContent(searchedWord):
+    url = "https://dict.youdao.com/w/%s" % searchedWord
     html = getHtml(url)
     # 最终结果
     results = []
+    # 从这里开始是 “柯林斯英汉双解大词典”
+    html = html.partition('<div id="authTrans" class="trans-wrapper trans-tab">')
+    if len(html) < 3:
+        return results
+    html = html[2]
+    if len(html.strip()) < 1:
+        return results
+        
+    # 获取单词
+    word = re.compile(r'<span class="title">(.+?)</span>').findall(html)
+    if len(word) > 0:
+        word = word[0]
     # 获取音标
     sound = re.compile(r'<em class="additional spell phonetic">(.+?)</em>').findall(html)
     if len(sound) > 0:
@@ -85,7 +97,8 @@ dirName = path.dirname(fileNameInput)
 outputName = "wordsFromYoudao.json"
 if len(dirName) > 0:
     outputName = "%s%swordsFromYoudao.json" % (dirName, path.sep)
-fileOutput = open(outputName, "w", encoding='utf-8')
-fileOutput.write(output)
-fileOutput.close()
+print(output)
+# fileOutput = open(outputName, "w", encoding='utf-8')
+# fileOutput.write(output)
+# fileOutput.close()
 # print(output)
