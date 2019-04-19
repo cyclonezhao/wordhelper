@@ -95,7 +95,7 @@ def testWords(words):
                 stillTestThisWord = False
     return errs
 
-words = json.loads(open(fileInput).read())
+words = json.loads(open(fileInput, encoding="utf8").read())
 while True:
     words = testWords(words)
     errCount = len(words)

@@ -97,8 +97,7 @@ dirName = path.dirname(fileNameInput)
 outputName = "wordsFromYoudao.json"
 if len(dirName) > 0:
     outputName = "%s%swordsFromYoudao.json" % (dirName, path.sep)
-print(output)
-# fileOutput = open(outputName, "w", encoding='utf-8')
-# fileOutput.write(output)
-# fileOutput.close()
+fileOutput = open(outputName, "w", encoding='utf-8')
+fileOutput.write(output)
+fileOutput.close()
 # print(output)
