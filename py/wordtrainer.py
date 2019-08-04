@@ -8,12 +8,14 @@ parser = argparse.ArgumentParser()
 parser.add_argument("file", help="the full path of the file which gonna be interpreted as input")
 parser.add_argument("-inorder", help="if true it will show each exam item in original order.", action="store_true")
 parser.add_argument("-rate", help="indicate the rate which calculate the count of letters that will be replaced by '*' by multiplying the length of the word.", default="0.4", type=float)
+parser.add_argument("-starmode", help="", action="store_true")
 
 # parsing arguments from the user command line
 args = parser.parse_args()
 fileInput = args.file
 inorder = args.inorder
 rate = args.rate
+starmode = args.starmode
 
 import json
 import random
@@ -96,13 +98,38 @@ def testWords(words):
     return errs
 
 words = json.loads(open(fileInput, encoding="utf8").read())
-while True:
-    words = testWords(words)
-    errCount = len(words)
-    if errCount > 0:
-        choose = raw_input("\nYou have %s errors, prepare to review. Typing 0 and pressing ENTER if you want to exit." % errCount)
-        if "0" == choose:
+if starmode:
+    while True:
+        words = testWords(words)
+        errCount = len(words)
+        if errCount > 0:
+            choose = raw_input("\nYou have %s errors, prepare to review. Typing 0 and pressing ENTER if you want to exit." % errCount)
+            if "0" == choose:
+                break
+        else:
             break
-    else:
-        break
+else:
+    from itertools import groupby
+    wordgroup = groupby(words, lambda v: v.get("word"))
+    words_2 = []
+    for key,value in wordgroup:
+        _value = list(map(lambda v: v.get("sentence"), value))
+        words_2.append({"word":key,"sentences":_value})
+    
+    temp_words = []
+    while len(words_2) > 0:
+        wordcount = len(words_2)
+        random.shuffle(words_2)
+        index = 1
+        for wordBox in words_2:
+            choose = raw_input("(%s/%s) %s\n" % (index, wordcount, wordBox.get("word")))
+            if not choose:
+                pass
+            else:
+                raw_input("\n".join(wordBox.get("sentences")) + "\n")
+                temp_words.append(wordBox)
+            index += 1
+        words_2 = temp_words
+        temp_words = []
+    
 raw_input("\nTest finished, press any key to exit, See you!")
