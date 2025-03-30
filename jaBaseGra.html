@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {background-color: #d5edb9;}
+        .answer { display: none; margin-left: 20px; }
+        .question { cursor: pointer; padding: 5px 0; }
+        .question:hover { color: #0066cc; }
+        .qa-item {margin: 1em}
+    </style>
+</head>
+<body>
+    <div class="qa-item">
+        <input type="checkbox">
+        <span class="question">1. 急用</span>
+        <div class="answer">きゅうよう</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">2. 今天有急事</span>
+        <div class="answer">今日は急用ができたので</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">3. 頭</span>
+        <div class="answer">あたま</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">4. 痛い</span>
+        <div class="answer">いたい</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">5. 因为头疼了</span>
+        <div class="answer">頭が痛かったので</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">6. 目前还没有问题</span>
+        <div class="answer">今のところまだ問題ない</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">7. 明天9点前能来吧</span>
+        <div class="answer">明日は九時までに来られるだろう。</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">8. 这也可以说是好方法吧</span>
+        <div class="answer">これもいい方法と言えよう。</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">9. 深深地感到他的深情厚意</span>
+        <div class="answer">彼の厚意がしみじみ感じられる</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">10. 偲ぶ</span>
+        <div class="answer">しのぶ</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">11. 一看这张照片，便不由地想起孩提时代的事情</span>
+        <div class="answer">この写真を見ると子供時代のことが偲ばれます。</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">12. 外地</span>
+        <div class="answer">がいち</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">13. 挂念在外地的女儿</span>
+        <div class="answer">外地の娘のことが案じられる。</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">14. 这幅画是那位画的</span>
+        <div class="answer">この絵は彼の方が書かれました。</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">15. 老师昨天去东京了</span>
+        <div class="answer">先生は昨日東京へ行かれました。</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">16. 同意</span>
+        <div class="answer">どうい</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">17. 校长直到最后都没有同意</span>
+        <div class="answer">校長先生は最後まで同意させなかった。</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">18. 他不太愿意谈自己的事</span>
+        <div class="answer">彼はあまり自分のことを話したがらない。</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">19. 现在谁也不想见</span>
+        <div class="answer">今は誰にも会いたくない。</div>
+    </div>
+<div class="qa-item">
+        <input type="checkbox">
+        <span class="question">20. 他想早点回去，所以就让他回去了</span>
+        <div class="answer">早く帰りたがるから、帰らせました。</div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
