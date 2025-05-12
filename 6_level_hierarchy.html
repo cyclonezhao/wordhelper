@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Collapsible Content</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; background-color: rgb(33,35,39);}
+        .section { margin-bottom: 5px; }
+        .heading {
+            cursor: pointer;
+            padding: 8px 15px;
+            background: rgba(0,0,0,0);
+            border-radius: 4px;
+            margin: 5px 0;
+            border: 1px solid #444242;
+            transition: background 0.2s;
+        }
+        .content {
+            display: none;
+            margin-left: 25px;
+            padding-left: 15px;
+            border-left: .5px solid #444242;
+        }
+        h1.heading { font-size: 1em; color: #9d9d9d; }
+        h2.heading { font-size: 1em; color: #9d9d9d; }
+        h3.heading { font-size: 1em; color: #9d9d9d; }
+        h4.heading { font-size: 1em; color: #9d9d9d; }
+        h5.heading { font-size: 1em; color: #9d9d9d; }
+        h6.heading { font-size: 1em; color: #9d9d9d; }
+        p { margin: 10px 0; line-height: 1.5; color: #9d9d9d}
+    </style>
+</head>
+<body>
+
+<div class="section">
+    <h1 class="heading" onclick="toggleContent('1')">用言</h1>
+    <div id="1" class="content">
+
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('1.1')">动词活用</h2>
+    <div id="1.1" class="content">
+
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.1.1')">未然型（29）</h3>
+    <div id="1.1.1" class="content">
+<p>学校へ行かない。</p><p>弟はまだ起きない。</p><p>誰も手を挙げない。</p><p>まだ誰も来ない。</p><p>そんなことはしない</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.1.2')">连用形</h3>
+    <div id="1.1.2" class="content">
+<p>学校へ行きます。</p><p>兄は五時に起きます。</p><p>私は手を挙げます。</p><p>午後六時に来ます。</p><p>なるべく早くします。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.1.3')">终止形</h3>
+    <div id="1.1.3" class="content">
+<p>学校へ行く。</p><p>毎日六時に起きる。</p><p>林君も手を挙げる。</p><p>午後には林（はやし）君もくる。</p><p>よく勉強する。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.1.4')">连体形</h3>
+    <div id="1.1.4" class="content">
+<p>学校へ行く人。</p><p>起きる時はまだ暗い。</p><p>手を挙げる人はいない。</p><p>ここへくる時はいつも雨だ。</p><p>テニスをする人は山田さんです。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.1.5')">假定形</h3>
+    <div id="1.1.5" class="content">
+<p>学校へ行けば。。。</p><p>早く起きれば気持ちがいい。</p><p>手を挙げれば呼んでくれるだろう。</p><p>昨日くればよかったのに。</p><p>努力をすれば追（お）いつくでしょう。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.1.6')">命令型</h3>
+    <div id="1.1.6" class="content">
+<p>学校へ行け。</p><p>早く起きろ（起きよ）。</p><p>早く手を挙げろ（挙げよ）。</p><p>明日からもっと早くこい。</p><p>急（いそ）いで準備（じゅんび）をしろ（せよ）</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.1.7')">推量形</h3>
+    <div id="1.1.7" class="content">
+<p>学校へ行こう。</p><p>明日から五時に起きよう。</p><p>僕も手を挙げよう。</p><p>明日はもっと早くこよう。</p><p>明日は早く出発をしよう。</p></div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('1.2')">补助动词 (44)</h2>
+    <div id="1.2" class="content">
+
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.2.1')">〜てある</h3>
+    <div id="1.2.1" class="content">
+<p>机の上に本が置（お）いてある。</p><p>黒板に字が書いてある。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.2.2')">〜ている</h3>
+    <div id="1.2.2" class="content">
+<p>テニスをしている。</p><p>花を咲いている</p><p>海に船が浮かんでいる。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.2.3')">〜てくる</h3>
+    <div id="1.2.3" class="content">
+<p>天気がだんだん暖かくなってくる。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.2.4')">〜ていく</h3>
+    <div id="1.2.4" class="content">
+<p>夜がだんだんふけていく。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.2.5')">〜ておく</h3>
+    <div id="1.2.5" class="content">
+<p>明日の講義を予習しておく。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.2.6')">〜てみる</h3>
+    <div id="1.2.6" class="content">
+<p>刺身を食べてみたいです。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.2.7')">〜てみせる</h3>
+    <div id="1.2.7" class="content">
+<p>今度こそは必ず勝ってみせる</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.2.8')">〜てやる</h3>
+    <div id="1.2.8" class="content">
+<p>弟に日本語を教えてやる。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.2.9')">〜てくれる</h3>
+    <div id="1.2.9" class="content">
+<p>彼は私に英語を教えてくれる。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.2.10')">〜てもらう</h3>
+    <div id="1.2.10" class="content">
+<p>私は彼に英語を教えてもらう。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('1.2.11')">〜てしまう</h3>
+    <div id="1.2.11" class="content">
+<p>三日間でこの小説を読んでしまう。</p></div></div></div></div></div></div>
+<div class="section">
+    <h1 class="heading" onclick="toggleContent('2')">助词</h1>
+    <div id="2" class="content">
+
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('2.1')">格助词</h2>
+    <div id="2.1" class="content">
+
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.1')">が</h3>
+    <div id="2.1.1" class="content">
+<p>春の日がうららかだ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.2')">がゆえに</h3>
+    <div id="2.1.2" class="content">
+<p>真理であるがゆえに反駁を恐れないのだ</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.3')">がする</h3>
+    <div id="2.1.3" class="content">
+<p>寒気がする、風邪をひいたかもしれない。</p><p>太鼓の音がします。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.4')">の</h3>
+    <div id="2.1.4" class="content">
+<p>それはあの人のノートです。</p><p>水の飲みたい人はこちらへ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.5')">を</h3>
+    <div id="2.1.5" class="content">
+<p>花を見る</p><p>鳥が空を飛ぶ。</p><p>そこで三年を過ごした</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.6')">を通じて</h3>
+    <div id="2.1.6" class="content">
+<p>南極は一年を通じて寒い。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.7')">をはじめ</h3>
+    <div id="2.1.7" class="content">
+<p>東京をはじめ日本の主な都市で売り出しました。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.8')">〜を〜に</h3>
+    <div id="2.1.8" class="content">
+<p>彼は病気を理由に学校を休んだ</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.9')">〜をもって</h3>
+    <div id="2.1.9" class="content">
+<p>書面をもってお知らせいたします。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.10')">に</h3>
+    <div id="2.1.10" class="content">
+<p>学生たちは教室にいます。</p><p>六時に東京駅に着く。</p><p>私は二年前にこの学校に入った。</p><p>零度になると水が氷になる。</p><p>弟に本を買ってやる。</p><p>雨に降られて困った。</p><p>海で泳ぎに行く。</p><p>家屋が強い風に倒壊した。</p><p>人生の経験に乏しい。</p><p>私のうちは駅に近い。</p><p>あの人は骨と皮ばかりに痩せている。</p><p>この山なら私にも登れるだろう。</p><p>考えに考えて、この問題を解くことができた。</p><p>魚は食べるには食べるが、あまり好きじゃない。</p><p>そこへ行くにはバスに乗って行かなければならない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.11')">〜にちがいない</h3>
+    <div id="2.1.11" class="content">
+<p>あの成績なら必ず合格するに違いない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.12')">〜にほかならない</h3>
+    <div id="2.1.12" class="content">
+<p>この成果はあなたの努力の結果に他ならない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.13')">〜にすぎない</h3>
+    <div id="2.1.13" class="content">
+<p>今の話は私の希望にすぎない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.14')">で</h3>
+    <div id="2.1.14" class="content">
+<p>毎日学校で日本語の勉強をしています。</p><p>私はアパートに一人で住んでいます。</p><p>この仕事は二、三日でできるでしょう。</p><p>公用で出張する。</p><p>鉛筆で字を書く。</p><p>学校ではそんなことは教えないはずだ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.15')">と</h3>
+    <div id="2.1.15" class="content">
+<p>友達と会う。</p><p>僕の考えは君と違う。</p><p>氷が溶けて水となる。</p><p>私は田中と申します。</p><p>お互いに杖と柱とも頼む。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.16')">〜という〜</h3>
+    <div id="2.1.16" class="content">
+<p>今は誰にも会いたくないという気持ちだ。</p><p>昨日の雨で花という花は散ってしまった。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.17')">〜ということだ</h3>
+    <div id="2.1.17" class="content">
+<p>会議は一日延期するということだ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.18')">〜といえば</h3>
+    <div id="2.1.18" class="content">
+<p>どうして成績が悪いといえば、やはりふだんの努力が足りないからだ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.19')">へ</h3>
+    <div id="2.1.19" class="content">
+<p>川に沿って東へ進む。</p><p>荷物を棚へのせる。</p><p>友人へ手紙を書く。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.20')">から</h3>
+    <div id="2.1.20" class="content">
+<p>学校は八時から始まります。</p><p>六時に東京から出発する。</p><p>これは友達からの贈り物です。</p><p>あの人の成績からすると、大学受験はとても無理だ。</p><p>タバコの火から火事を起こすことが多い。</p><p>日本酒は米から作る。</p><p>これをあなたから山田さんにあげてください。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.21')">まで</h3>
+    <div id="2.1.21" class="content">
+<p>昨夜駅で十時まで待ちました。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.1.22')">より</h3>
+    <div id="2.1.22" class="content">
+<p>あなたは私よりだいぶ若いですね。</p><p>君に頼むより他に仕方がない。</p><p>昼食はご飯よりパンにしました。</p><p>会社は午前九時より始まる。</p></div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('2.2')">并列助词</h2>
+    <div id="2.2" class="content">
+
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.2.1')">と</h3>
+    <div id="2.2.1" class="content">
+<p>今日は山田くんと木村くんが欠席した。</p><p>見ると聞くとは天地の差だ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.2.2')">や</h3>
+    <div id="2.2.2" class="content">
+<p>一度や二度の間違いではない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.2.3')">や〜など</h3>
+    <div id="2.2.3" class="content">
+<p>バナナやミカンなどを買った。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.2.4')">〜や〜や</h3>
+    <div id="2.2.4" class="content">
+<p>梅や桜や色々な花が咲いている。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.2.5')">やら</h3>
+    <div id="2.2.5" class="content">
+<p>ノートやらプリントやらが机の上にある。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.2.6')">に</h3>
+    <div id="2.2.6" class="content">
+<p>私のうちは父に母に弟の四人家族です。</p><p>風に雨が加わる。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.2.7')">か</h3>
+    <div id="2.2.7" class="content">
+<p>みかんかリンゴか買って来なさい。</p><p>汽車か電車かで行きます。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.2.8')">〜かどうか</h3>
+    <div id="2.2.8" class="content">
+<p>今日帰ってくるかどうかまだ分かりません。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.2.9')">〜か何か</h3>
+    <div id="2.2.9" class="content">
+<p>一緒にうどんか何か食べましょう。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.2.10')">〜か誰か</h3>
+    <div id="2.2.10" class="content">
+<p>それは山田さんか誰かやってくれるそうです。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.2.11')">〜かどこか</h3>
+    <div id="2.2.11" class="content">
+<p>公園かどこか遊びに行ったそうです。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.2.12')">〜かないかに</h3>
+    <div id="2.2.12" class="content">
+<p>ドアを開けるかないかに、部屋の中から犬が飛びだしてきた。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.2.13')">なり</h3>
+    <div id="2.2.13" class="content">
+<p>ペンなり鉛筆なり、書くものを貸してください。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.2.14')">たり</h3>
+    <div id="2.2.14" class="content">
+<p>お互いに行ったり来たりするのはいいことだ。</p><p>それくらいの事で泣いたりするものではない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.2.15')">とか</h3>
+    <div id="2.2.15" class="content">
+<p>箱根とか日光とかは、日本へ旅行する人の必ず訪れるところです。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.2.16')">〜とかいう</h3>
+    <div id="2.2.16" class="content">
+<p>明日は雨だとか言っていました。</p></div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('2.3')">接续助词（76）</h2>
+    <div id="2.3" class="content">
+
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.1')">ば</h3>
+    <div id="2.3.1" class="content">
+<p>風が吹けば、船は出ないだろう。</p><p>よく見れば、老人ではなかった。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.2')">〜さえ〜ば〜</h3>
+    <div id="2.3.2" class="content">
+<p>天気さえ良ければ、明日きっと行くよ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.3')">〜ば〜ほど〜</h3>
+    <div id="2.3.3" class="content">
+<p>北へ行けば行くほど寒くなる。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.4')">〜ばこそ〜</h3>
+    <div id="2.3.4" class="content">
+<p>君のためを思えばこそ、そう言ったのだ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.5')">と</h3>
+    <div id="2.3.5" class="content">
+<p>山田が来ると五人になる。</p><p>ここまで送ってもらうと、もう一人で帰れる。</p><p>教室に入ると、ベルが鳴った。</p><p>母が家に着くと、すぐ昼ごはんのしたくにとりかかった。</p><p>はっきり言うと、明日からこなくてもいいのだ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.6')">〜ともすると〜</h3>
+    <div id="2.3.6" class="content">
+<p>どうしたわけか、彼は近頃ともすると遅刻する。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.7')">〜ことによると〜</h3>
+    <div id="2.3.7" class="content">
+<p>今夜はことによると残業で遅くなるかもしれない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.8')">〜とくると〜</h3>
+    <div id="2.3.8" class="content">
+<p>水泳とくると、全然だめだ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.9')">て</h3>
+    <div id="2.3.9" class="content">
+<p>冬は夜が長くて、日が短い。</p><p>金がなくて、行けない。</p><p>駅まで歩いて行こう。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.10')">〜て〜て〜</h3>
+    <div id="2.3.10" class="content">
+<p>怖くて怖くてたまらなかった。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.11')">から</h3>
+    <div id="2.3.11" class="content">
+<p>すぐ行くから、待っていてください。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.12')">〜からといって〜</h3>
+    <div id="2.3.12" class="content">
+<p>寒いからといって家の中ばかりにいるのはよくない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.13')">〜からには〜</h3>
+    <div id="2.3.13" class="content">
+<p>やるからには最後までやらなければならない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.14')">ので</h3>
+    <div id="2.3.14" class="content">
+<p>雨が降っているので、旅行を止めました。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.15')">し</h3>
+    <div id="2.3.15" class="content">
+<p>あの庭には池もあるし、山もある。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.16')">ながら</h3>
+    <div id="2.3.16" class="content">
+<p>ご飯を食べながら新聞を読みます。</p><p>知っていながら人に聞く。</p><p>昔ながらのしきたり。</p><p>三日ながら雨天だった。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.17')">つつ</h3>
+    <div id="2.3.17" class="content">
+<p>働きつつ大学を卒業した。</p><p>悪いと知りつつ、改めようとしない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.18')">〜つつある</h3>
+    <div id="2.3.18" class="content">
+<p>雨はなお降りつつある。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.19')">ても</h3>
+    <div id="2.3.19" class="content">
+<p>明日の旅行は雨が降っても中止しません。</p><p>何回読んでも意味がわからない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.20')">ては</h3>
+    <div id="2.3.20" class="content">
+<p>この川で泳いではいけません。</p><p>こう暑くては、能率が上がらない。</p><p>雨が降ってはやみ、やんでは降って、実に嫌な天気だ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.21')">〜にしては〜</h3>
+    <div id="2.3.21" class="content">
+<p>小学生にしてはなかなかうまい字を書きますね。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.22')">〜てはいけない</h3>
+    <div id="2.3.22" class="content">
+<p>そんなことをしてはいけない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.23')">〜てはならない</h3>
+    <div id="2.3.23" class="content">
+<p>うそは言ってはならない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.24')">〜てはだめだ</h3>
+    <div id="2.3.24" class="content">
+<p>勝手に出入りしてはだめだ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.25')">けれども</h3>
+    <div id="2.3.25" class="content">
+<p>熱は下がったけれども、まだ頭がいたい。</p><p>始めて行ったけれども、いいところですね。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.26')">けど</h3>
+    <div id="2.3.26" class="content">
+<p>風は止んだけど、雨はまだ降っている。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.27')">が</h3>
+    <div id="2.3.27" class="content">
+<p>春は来たが、また寒い。</p><p>夏は暑いが、冬は寒い。</p><p>すみませんが、ちょっとお待ちください。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.28')">のに</h3>
+    <div id="2.3.28" class="content">
+<p>呼んでいるのに、返事もしない。</p><p>もっと努力して勉強したらよかったのに。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.29')">に</h3>
+    <div id="2.3.29" class="content">
+<p>待っていたに、とうとう来なかった。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.30')">なり</h3>
+    <div id="2.3.30" class="content">
+<p>授業が終わるなり、教室を出て行った。</p><p>今朝家を出たなり、まだ帰らない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.31')">ものの</h3>
+    <div id="2.3.31" class="content">
+<p>そうは言ったものの、実行は難しい。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.32')">ところ（が）</h3>
+    <div id="2.3.32" class="content">
+<p>社長に相談したところ、彼は大賛成した。</p><p>わざわざ田中君を訪ねだところが、あいにく留守だった。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.3.33')">ところで</h3>
+    <div id="2.3.33" class="content">
+<p>あんな人は、お願いしたところで、聞いてくれないだろう。</p></div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('2.4')">提示助词（87）</h2>
+    <div id="2.4" class="content">
+
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.4.1')">は</h3>
+    <div id="2.4.1" class="content">
+<p>人間は万物の霊長である。</p><p>飛行機の中ではタバコを吸ってはいけません。</p><p>絶対に忘れはしない。</p><p>今日は行けるが、明日はいけない。</p><p>読んでは見たが、分からないところが多い。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.4.2')">も</h3>
+    <div id="2.4.2" class="content">
+<p>紅葉もたいそう綺麗です。</p><p>この部屋は日もあたるし、風通しもよい。</p><p>どこも皆同じ値段です。</p><p>水を飲む元気もないほど疲れてしまった。</p><p>あそこは電気もないような山村です。</p><p>りんごはいくつもない。</p><p>この仕事は一週間もあれば終わるでしょう。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.4.3')">さえ</h3>
+    <div id="2.4.3" class="content">
+<p>家族にさえ知らせずに、旅に出ました。</p><p>風が強いばかりでなく、雨さえも降り始めた。</p><p>天気さえ良ければ行く。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.4.4')">すら</h3>
+    <div id="2.4.4" class="content">
+<p>雨が降って、風すら吹き出した。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.4.5')">こそ</h3>
+    <div id="2.4.5" class="content">
+<p>これこそ本物です。</p><p>努力があってこそ本当の成功がある。</p><p>本を読めばこそ物の道理が分かるのだ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.4.6')">でも</h3>
+    <div id="2.4.6" class="content">
+<p>そんなことは小さな子供でも分かります。</p><p>今からでも遅くはない。</p><p>こんなことは誰でも知っていることだ。</p><p>お茶でもどうぞ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.4.7')">だって</h3>
+    <div id="2.4.7" class="content">
+<p>子供だって知っている。</p><p>どこだって同じことだ。</p><p>今後は日本へだってアメリカへだって行く機会がある。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.4.8')">しか</h3>
+    <div id="2.4.8" class="content">
+<p>このダムには鯉しかいません。</p></div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('2.5')">副助词（94）</h2>
+    <div id="2.5" class="content">
+
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.1')">まで</h3>
+    <div id="2.5.1" class="content">
+<p>子供までが人を馬鹿にしている。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.2')">までも</h3>
+    <div id="2.5.2" class="content">
+<p>言うまでもなく日本は島国である。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.3')">どこまで</h3>
+    <div id="2.5.3" class="content">
+<p>これは悪いことだから、僕はどこまでも反対する。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.4')">までだ</h3>
+    <div id="2.5.4" class="content">
+<p>本人が嫌だといえば、それまでだ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.5')">あくまで</h3>
+    <div id="2.5.5" class="content">
+<p>自分の考えをあくまで主張して譲らなかった。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.6')">ばかり</h3>
+    <div id="2.5.6" class="content">
+<p>昨夜六時間ばかり眠りました。</p><p>学校では日本語ばかり習っている。</p><p>これは買ったばかりの洋服です。</p><p>もう卒業するばかりになっている。</p><p>お金がないばかりにほしい本も買えない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.7')">～ばかりでなく</h3>
+    <div id="2.5.7" class="content">
+<p>口で言ったばかりでなく、行動をとっているのだ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.8')">～ばかりか</h3>
+    <div id="2.5.8" class="content">
+<p>書けないばかりか、読むことするできない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.9')">だけ</h3>
+    <div id="2.5.9" class="content">
+<p>みんな出かけて、私だけうちにいた。</p><p>これだけあればたくさんです。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.10')">～ば～だけ</h3>
+    <div id="2.5.10" class="content">
+<p>値段が高ければ高いだけ物もよい。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.11')">～だけのことはある</h3>
+    <div id="2.5.11" class="content">
+<p>この本は読むだけのことはある。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.12')">～だけあって</h3>
+    <div id="2.5.12" class="content">
+<p>あの人はスポーツマンだけあって、体格がいい。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.13')">～だけに</h3>
+    <div id="2.5.13" class="content">
+<p>年を取っているだけに、父の病気は治りにくい。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.14')">のみ</h3>
+    <div id="2.5.14" class="content">
+<p>あたりは静かで、たっだ波の音のみ聞こえる。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.15')">きり</h3>
+    <div id="2.5.15" class="content">
+<p>部屋に机が一つあるきりで、ほかには何もない。</p><p>三年前に別れたきり、一度も会ったことがない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.16')">ほど</h3>
+    <div id="2.5.16" class="content">
+<p>約束の時間に二十分ほど遅れた。</p><p>昨日は足は痛くなるほど歩きました。</p><p>南へ行けば行くほど暑くなる。</p><p>今年は去年の夏ほど暑くはない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.17')">ぐらい（くらい）</h3>
+    <div id="2.5.17" class="content">
+<p>家か駅まで歩いて十五分くらいかかります。</p><p>散歩ぐらいはしてもいい。</p><p>簡単な会話ぐらいは知っている。</p><p>今日はぐらい忙しい日はなかった。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.18')">など</h3>
+    <div id="2.5.18" class="content">
+<p>私は妹に着物など買ってやった。</p><p>日本の主食品は米や麦などだ。</p><p>君の言うことなんか誰も信用しない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.19')">ずつ</h3>
+    <div id="2.5.19" class="content">
+<p>毎日3時間ずつ勉強しています。</p><p>みなさん、この紙を一枚ずつ持って行きなさい。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.20')">やら</h3>
+    <div id="2.5.20" class="content">
+<p>何のことやらさっぱりわかりません。</p><p>田中さんとやらおっしゃるかたがいらっしゃいました。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.21')">なり</h3>
+    <div id="2.5.21" class="content">
+<p>母親の目を見つめたなり、まばたきもしなかった。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.5.22')">か</h3>
+    <div id="2.5.22" class="content">
+<p>京都へも何度か行った。</p><p>時間が早すぎたのか、会場には誰もきていない。</p><p>午後に雨が降るかもしれない。</p></div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('2.6')">终助词(102)</h2>
+    <div id="2.6" class="content">
+
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.6.1')">か</h3>
+    <div id="2.6.1" class="content">
+<p>そうか、やっぱり本当だったのか。</p><p>誰か来ないかなあ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.6.2')">かしら</h3>
+    <div id="2.6.2" class="content">
+<p>このバスは駅へ行くかしら。</p><p>これでいいかしら。</p><p>早くいい天気にならないかしら。</p><p>誰かしら来たらしい。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.6.3')">わ</h3>
+    <div id="2.6.3" class="content">
+<p>みんなもうすぐくると思うわ。</p><p>まあ、綺麗だわ。</p><p>今度の旅行には、私も行くわよ。</p><p>今日は随分寒いわね。</p><p>もう暗くなったわい。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.6.4')">ね</h3>
+    <div id="2.6.4" class="content">
+<p>いいお天気だねえ。</p><p>おふるさとは秋田でしたね。</p><p>君、言いたいのはそれだけかね。</p><p>あのねえ、あれがほしいんだけど。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.6.5')">よ</h3>
+    <div id="2.6.5" class="content">
+<p>あそこは危ないよ。</p><p>なぜ僕に知らせてくれなかったんだよ。</p><p>遅くなるから、早く行けよ。</p><p>さあ、遅れないように早く行こうよ。</p><p>懐かしい故郷よ、さようなら。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.6.6')">さ</h3>
+    <div id="2.6.6" class="content">
+<p>僕にだってできるさ。</p><p>いいところって、いったいどこさ。</p><p>それがさ、難しくて、本当に困ってしまった。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.6.7')">な</h3>
+    <div id="2.6.7" class="content">
+<p>用事のないものは入るな。</p><p>明日からもっと早く来な。</p><p>ああ、今日はいい天気だなあ。</p><p>あなたも一緒に行ってくれるんでしょうな。</p><p>しかしですなあ、あなたの考えだけが正しいわけではないでしょう。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.6.8')">ぞ</h3>
+    <div id="2.6.8" class="content">
+<p>おい、もう時間だぞ。</p><p>こんな大事なことをどうして忘れようぞ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.6.9')">ぜ</h3>
+    <div id="2.6.9" class="content">
+<p>明日の出発は早いぜ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.6.10')">とも</h3>
+    <div id="2.6.10" class="content">
+<p>もちろん賛成しますとも。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.6.11')">の</h3>
+    <div id="2.6.11" class="content">
+<p>まあ、やっぱりそうだったの。</p><p>どうしてだめなの？</p><p>ご飯はだまって食べるの。</p><p>私それが大好きなのよ。</p><p>明日は必ず来てくれるのね。待っているよ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.6.12')">や</h3>
+    <div id="2.6.12" class="content">
+<p>田中君、テニスをしようや。</p><p>太郎や、もうごはんですよ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.6.13')">こと</h3>
+    <div id="2.6.13" class="content">
+<p>まあ、綺麗に咲いたこと。</p><p>その後、お変わりありませんこと？</p><p>授業中には、タバコを吸わないこと。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.6.14')">もの（もん）</h3>
+    <div id="2.6.14" class="content">
+<p>いたずらしたの、僕じゃないもん。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.6.15')">ものか（もんか）</h3>
+    <div id="2.6.15" class="content">
+<p>そんなことがあるものか。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.6.16')">け</h3>
+    <div id="2.6.16" class="content">
+<p>君は何という名だっけ。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('2.6.17')">い</h3>
+    <div id="2.6.17" class="content">
+<p>それは何だい。</p><p>それぐらいの勉強で大学に入れるかい。</p><p>勝手にしろい。俺はもう知らんぞ。</p></div></div></div></div></div></div>
+<div class="section">
+    <h1 class="heading" onclick="toggleContent('3')">助动词（111）</h1>
+    <div id="3" class="content">
+
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('3.1')">按接续法分类</h2>
+    <div id="3.1" class="content">
+<p>接未然形的：せる、させる、しめる、れる、られる、ない、ぬ（ん）、まい</p><p>接连用形的：ます、たい、たがる、た、そうだ</p><p>接终止形的：まい、らしい、そうだ</p><p>接连体形的：ようだ、みたいだ</p><p>接体言、助词等的：らしい、だ、です、ようだ、みたいだ</p><p>接推量形的：う、よう</p></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('3.2')">按意义分类</h2>
+    <div id="3.2" class="content">
+<p>被动助动词：れる、られる</p><p>可能助动词：れる、られる</p><p>敬语助动词：れる、られる（126）</p><p>自发助动词：れる、られる</p><p>使役助动词：せる、させる</p><p>愿望助动词：たい、たがる</p><p>推量助动词：う、よう、まい、らしい</p><p>比况助动词：ようだ（ようです）</p><p>样态助动词：そうだ（そうです）</p><p>传闻助动词：そうだ（そうです）</p><p>指定助动词：だ、です</p><p>敬体助动词：ます</p><p>否定助动词：ない、ぬ（ん）</p><p>过去、完了助动词：た</p></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('3.3')">使役助动词</h2>
+    <div id="3.3" class="content">
+
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.3.1')">含义</h3>
+    <div id="3.3.1" class="content">
+<p>1）让别人做某个动作</p><p>2）让事物成为某种状态</p><p>3）放任、听其自便</p><p>4）请求、允许</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.3.2')">接续法和活用</h3>
+    <div id="3.3.2" class="content">
+<p>読む　読ませる</p><p>起きる　起きさせる</p><p>くる　こさせる</p><p>する　させる</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.3.3')">构成</h3>
+    <div id="3.3.3" class="content">
+<p>学生が本を読む</p><p>先生が学生に本を読ませる。</p><p>親が心配する</p><p>私は親を心配させる。</p><p>先生は学生おしてお客さんにプリントを貸させる。</p><p>彼に話して子供達と一緒に川を渡らせる。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.3.4')">各活用形的用例</h3>
+    <div id="3.3.4" class="content">
+<p>// 未然形</p><p>日本語学校では学生に英語を使わせない。</p><p>// 连用形</p><p>彼はいつも人を困らせます。</p><p>// 终止形</p><p>子供を一人で寝させる。</p><p>// 连体形</p><p>あの人にその仕事を続けさせることはできません。</p><p>// 假定形</p><p>私に作らせれば、もっと上手に作りますよ。</p><p>// 命令形</p><p>家のにいる人に戸を開けさせろ。</p><p>// 推量形</p><p>今日は彼を休ませようか。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.3.5')">其他意思</h3>
+    <div id="3.3.5" class="content">
+<p>表示放任，听其自便等意</p><p>子供にあまり食べさせると体に良くない。</p><p>表示请求，允许等意</p><p>私にも参加させてください。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.3.6')">しめる</h3>
+    <div id="3.3.6" class="content">
+<p>私をして言わしめれば、彼は悪人である。</p></div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('3.4')">被动助动词（118）</h2>
+    <div id="3.4" class="content">
+<p>れる、られる</p>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.4.1')">含义</h3>
+    <div id="3.4.1" class="content">
+<p>1）承受别人动作</p><p>2）受到其他外力作用</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.4.2')">接续</h3>
+    <div id="3.4.2" class="content">
+<p>読む　読まれる</p><p>起きる　起きられる</p><p>くる　こられる</p><p>する　される</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.4.3')">构成</h3>
+    <div id="3.4.3" class="content">
+<p>// 不带宾语的被动句</p><p>警察は泥棒を捕まえた。</p><p>泥棒は警察に捕まえられた。</p><p>お母さんは子供を叱った</p><p>子供はお母さんに叱られた。</p><p>// 不带宾语的被动句</p><p>山田さんは彼に日本料理を進める。</p><p>彼は山田さんに日本料理を進められる。</p><p>// 主动句的宾语前有定语，被动句将定语变成主语，而宾语不变</p><p>スリは彼の財布をとった</p><p>彼はスリに財布をとられた。</p><p>// 不带主动者的被动句</p><p>オリンピックは四年ごとに行われる。</p><p>// 由自动词构成的被动句</p><p>途中で大雨に降られた。</p><p>// 在口语的文章和讲演中，主动者也可用によって表示</p><p>東京では毎年多くの家が火事によって焼かれる。</p><p>// 主动者也可用で表示，一般用于表示自然原因的场合</p><p>豪雨で橋が流されてしまった。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.4.4')">活用</h3>
+    <div id="3.4.4" class="content">
+<p>// 未然形（れ、られ）</p><p>この作品は若者にあまり好まれない。</p><p>// 连用形（れ、られ）</p><p>門を閉められて、中に入ることができない。</p><p>// 终止形（れる、られる）</p><p>そんなことを言っては笑われるでしょう。</p><p>// 连体形（れる、られる）</p><p>試験の結果は明後日発表される予定です。</p><p>// 假定形（れれ、られれ）</p><p>人に尊敬されればされるほど、謙虚でなければならない。</p><p>// 命令形（れろ、れよ　られろ、られよ）</p><p>犬にでも食われろ。</p><p>// 推量形（れ、られ）</p><p>一部分の人から反対されようが、大多数は賛成である。</p></div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('3.5')">可能助动词(121)</h2>
+    <div id="3.5" class="content">
+<p>れる、られる</p>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.5.1')">含义</h3>
+    <div id="3.5.1" class="content">
+<p>1）具有某种能力</p><p>2）允许实现某种动作</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.5.2')">构成</h3>
+    <div id="3.5.2" class="content">
+<p>物を食べる</p><p>物が食べられる</p><p>病人には物が食べられない。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.5.3')">可能动词</h3>
+    <div id="3.5.3" class="content">
+<p>読む→読まれる→読める</p><p>かく　書かれる　書ける</p><p>話す　話させる　話せる</p><p>用五段动词构成可能句时，一般不用可能助动词，而直接用可能动词。</p><p>私にも日本語が少し話せる。</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.5.4')">各活用形的用例</h3>
+    <div id="3.5.4" class="content">
+<p>// 未然形</p><p>今日は急用ができたので、会議に出られない。</p><p>// 连用形</p><p>王先生は英語も教えられ、日本語も教えられる。</p><p>// 终止形</p><p>明日は九時までに来られるだろう。</p><p>// 连体形</p><p>食べられる物を全部食べてください。</p><p>// 假定形</p><p>明日来られれば、早く来なさい。</p><p>// 推量形</p><p>これもいい方法と言えよう。</p></div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('3.6')">自发助动词（125）</h2>
+    <div id="3.6" class="content">
+<p>れる、られる</p><p>1）接在与感情、情绪有直接关系的动词未然形后</p><p>2）表示自然发生或感情抑制不住的动作</p><p>3）接续法和活用和可能助动词一样</p><p>4）与自发助动词发生关系的动词为数不多，常见的有：思う、偲ぶ、思い出す、泣く、思いやる、考える、感じる、案じる</p><p>彼の厚意がしみじみ感じられる</p><p>この写真を見ると子供時代のことが偲ばれます。</p><p>外地の娘のことが案じられる。</p></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('3.7')">敬语助动词(126)</h2>
+    <div id="3.7" class="content">
+<p>れる、られる</p><p>对动作、行为的主体表示敬意</p><p>あなたが先日言われた本はこれでしょう。</p>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.7.1')">各活用形的用例</h3>
+    <div id="3.7.1" class="content">
+<p>// 未然形</p><p>校長先生は最後まで同意されなかった</p><p>// 连用形</p><p>そのことなら先生が知っていられます。</p><p>// 终止形</p><p>市長の後任は助役がなられるらしい。</p><p>// 连体形</p><p>課長さんの帰られるころにまた参りましょう。</p><p>// 假定形</p><p>もしお父さんが来られれば、僕がご案内しましょう。</p><p>// 推量形</p><p>朝は何時ごろ起きられますか。</p></div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('3.8')">愿望助动词(128)</h2>
+    <div id="3.8" class="content">
+<p>たい：内心的愿望</p><p>たがる：表露在言行上的可以察觉的希望</p><p>私はずっと日本へ行きたい。</p><p>あなたは小説ばかり読みたがりますね。</p>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.8.1')">接续</h3>
+    <div id="3.8.1" class="content">
+<p>接连用形</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.8.2')">活用</h3>
+    <div id="3.8.2" class="content">
+<p>たい：按形容词活用</p><p>たがる：按五段动词活用</p>
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.8.2.1')">活用表</h4>
+    <div id="3.8.2.1" class="content">
+<p>// 未然形</p><p>无</p><p>たがら</p><p>// 连用形</p><p>たかっ、たく</p><p>たがっ、たがり</p><p>// 终止形</p><p>たい</p><p>たがる</p><p>// 连体形</p><p>たい</p><p>たがる</p><p>// 假定形</p><p>たけれ</p><p>たがれ</p><p>// 推量形</p><p>たかろ</p><p>たがろ</p></div></div>
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.8.2.2')">例句</h4>
+    <div id="3.8.2.2" class="content">
+<p>// 未然形</p><p>たい没有未然形</p><p>彼はあまり自分のことを話したがらない。</p><p>// 连用形</p><p>今は誰にも会いたくない。</p><p>とてもすばらしい映画なので、彼もみたがっている。</p><p>// 终止形</p><p>今日は早く家へ帰りたい。</p><p>早く帰りたがるから、帰らせました。</p><p>// 连体形</p><p>言いたいことは何でも言うがいい。</p><p>あまり行きたがるものだから、ついつれていく気になったのです。</p><p>// 假定形</p><p>そんなに聞きたければ話してやりましょう。</p><p>// 推量形</p><p>あの子もさぞ行きたかろうね。</p><p>君の行きたいか</p><p>彼も行きたいでしょう</p></div></div></div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('3.9')">否定助动词（131）</h2>
+    <div id="3.9" class="content">
+<p>ない、ぬ（ん）</p>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.9.1')">接续</h3>
+    <div id="3.9.1" class="content">
+<p>行く　行かない　行かぬ（ん）</p><p>見る　見ない　見ぬ（ん）</p><p>来る　来ない　来ぬ（ん）</p><p>する　しない　せぬ（ん）</p><p>ます　ませぬ（ん）</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.9.2')">活用</h3>
+    <div id="3.9.2" class="content">
+
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.9.2.1')">活用表</h4>
+    <div id="3.9.2.1" class="content">
+<p>// 连用形</p><p>ず</p><p>なかっ、なく</p><p>// 终止形</p><p>ぬ（ん）</p><p>ない</p><p>// 连体形</p><p>ぬ（ん）</p><p>ない</p><p>// 假定形</p><p>ね</p><p>なけれ</p><p>// 推量形</p><p>无</p><p>なかろ</p></div></div>
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.9.2.2')">例句</h4>
+    <div id="3.9.2.2" class="content">
+<p>// 连用形</p><p>僕は何も知らなかった。</p><p>霧で頂上が見えなくなった</p><p>欠席もせず、遅刻もしない。</p><p>// 终止形</p><p>お前のことでどれぐらい苦労したか知れない。</p><p>私は決して嘘は申しません</p><p>真相は一切わからぬ。</p><p>// 连体形</p><p>あまり高いから、買わないことにする。</p><p>// 假定形</p><p>見えなければ、もっと前へ出なさい。</p><p>ぜひそうせねばならぬ理由はない。</p><p>// 推量形</p><p>それだけでは足りなかろう。</p><p>それだけでは足りないだろう。</p></div></div></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.9.3')">ない的其他用法</h3>
+    <div id="3.9.3" class="content">
+
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.9.3.1')">双重否定</h4>
+    <div id="3.9.3.1" class="content">
+<p>繰り返して練習すれば、上手にならないことはない。</p></div></div>
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.9.3.2')">ないで</h4>
+    <div id="3.9.3.2" class="content">
+<p>田中さんは何も知らないでいる。</p><p>食事もしないで仕事を続けている。</p><p>もうどこにも行かないで。</p></div></div>
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.9.3.3')">すぎない</h4>
+    <div id="3.9.3.3" class="content">
+<p>今の話は、ただ私の希望にすぎないのです。</p></div></div>
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.9.3.4')">かも知れない</h4>
+    <div id="3.9.3.4" class="content">
+<p>明日は雨かも知れない。</p></div></div>
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.9.3.5')">ほかならない</h4>
+    <div id="3.9.3.5" class="content">
+<p>この成果はあなたの努力の結果にほかならない。</p></div></div>
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.9.3.6')">てはいけない、てはならない</h4>
+    <div id="3.9.3.6" class="content">
+<p>どんなことがあっても暴力をふるってはいけないよ。</p></div></div>
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.9.3.7')">てたまらない、てならない、やまない</h4>
+    <div id="3.9.3.7" class="content">
+<p>昨日は暑くてたまらなかった。</p><p>母の病気が心配でならない。</p><p>諸君の活躍を期待してやまない。</p></div></div>
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.9.3.8')">なければならない、なくてはならない、なくてはいけない</h4>
+    <div id="3.9.3.8" class="content">
+<p>目上の人には敬語を使わなければならない。</p><p>もっと早く寝なくてはいけないよ。</p></div></div></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.9.4')">文语否定助动词ず的用法</h3>
+    <div id="3.9.4" class="content">
+</div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('3.10')">推量助动词：う、よう、まい（137）</h2>
+    <div id="3.10" class="content">
+<p>无词形变化</p><p>う、よう接在活用词推量形后，表示推测、意志、劝诱等意义</p><p>まい接在五段动词的终止形，或五段以外动词的未然形后，表示否定的推测，意志等。</p>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.10.1')">用法</h3>
+    <div id="3.10.1" class="content">
+
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.10.1.1')">终止形</h4>
+    <div id="3.10.1.1" class="content">
+<p>// 表示推量</p><p>山頂からは湖水も見えよう。</p><p>夕方から雨が降るだろう。</p><p>// 表示意志。主要表示讲话人自身的意志</p><p>頭が痛いから、学校を休もう。</p><p>あの人にはもう二度と頼むまいと決心した。</p><p>// 表示劝诱、希望、号召，主语包括讲话人在内</p><p>田中君、一緒に学校へ行こう。</p><p>これからお互いに冗談を言うまい。</p></div></div>
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.10.1.2')">连体形</h4>
+    <div id="3.10.1.2" class="content">
+<p>连体形不表示推量、意志、劝诱等主观意向，而具有客观表现性</p><p>そんなことのあろうはずがない。</p><p>なろうことなら、私がかわってやりたいとことだ。</p></div></div></div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('3.11')">推量助动词：らしい（140）</h2>
+    <div id="3.11" class="content">
+<p>表示有根据有把握的推断，不是主观的设想。有时也表示婉转的断定。</p><p>动词、形容词、助动词终止形；</p><p>接在体言、副词、形容动词词干和部分助词后。</p><p>明日も雪が降るらしい。</p><p>この川はかなり深いらしい。</p><p>どうも君の考えは、間違っていたらしい。</p>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.11.1')">用法</h3>
+    <div id="3.11.1" class="content">
+<p>只有连用形、终止形和连体形</p><p>// 连用形</p><p>その仕事は随分辛いらしかった。</p><p>// 终止形</p><p>これには何かわけがあるらしい。</p><p>この本は君のらしい。</p><p>// 连体形</p><p>何か用事があるらしい様子だ。</p></div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('3.12')">过去、完了助动词：た（141）</h2>
+    <div id="3.12" class="content">
+<p>接在连用形后</p><p>表示动作、状态已经完成或称为过去，以及状态的持续存在</p><p>雨はもう止んだ</p><p>壁にかけた時計が十二時を打った。</p>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.12.1')">用法</h3>
+    <div id="3.12.1" class="content">
+
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.12.1.1')">终止形</h4>
+    <div id="3.12.1.1" class="content">
+<p>// 表示过去、完了</p><p>私はあのごろはまだ学生だった。</p><p>昨日一日中家でテレビを見た。</p><p>// 表示强调、证实。此用法和时间无关</p><p>明日はご誕生日だったね。</p><p>わかった、わかった。この道を行くんだ。</p><p>// 表示命令</p><p>どいた、どいた、子供は近寄るな。</p></div></div>
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.12.1.2')">连体形</h4>
+    <div id="3.12.1.2" class="content">
+<p>// 表示过去、完了</p><p>私は、そんなことを言った覚えはない。</p><p>兄は帰ったばかりです。</p><p>// 表示无时间概念的常理性</p><p>借りたものは返さなければならない。</p><p>// 表示存在，相当于〜ている、〜てある</p><p>竿にほした着物をとってきなさい。</p><p>あのメガネをかけた方が田中先生です。</p><p>優れた技術</p><p>汚れた着物</p><p>// 表示未来、完了</p><p>この次お会いした時、彼にお伝えします。</p></div></div>
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.12.1.3')">假定形</h4>
+    <div id="3.12.1.3" class="content">
+<p>// 表示假定条件</p><p>雨が降ったら、早く帰ってきなさい。</p><p>私だったら、すぐは引き受けないね。</p><p>// 表示确定条件</p><p>会って見たらしっかりした青年だった。</p></div></div>
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.12.1.4')">推量形</h4>
+    <div id="3.12.1.4" class="content">
+<p>君も昨日の事件を聞いたろう。</p><p>防寒設備がないから、寒かったろう。</p><p>それは愉快な旅だっただろうね。</p></div></div></div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('3.13')">敬语助动词： ます（144	）</h2>
+    <div id="3.13" class="content">
+<p>接在动词和动词型助动词的连用形后</p><p>表示尊敬或郑重的语气</p></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('3.14')">比况助动词　ようだ（ようです）（146）</h2>
+    <div id="3.14" class="content">
+<p>表示比喻、例示、不确切的判断</p><p>今日は寒くて、まるで冬のようだ。</p><p>文章中常用ようである</p><p>今日は寒くて、まるで冬のようである。</p><p>北海道のような寒いところへ行きたい。</p>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.14.1')">接续</h3>
+    <div id="3.14.1" class="content">
+<p>接在用言和使役（せる、させる）、被动（れる、られる）、否定（ない、ぬ（ん））、愿望（たい、たがる）、过去完了（た）等助动词的连体形后</p><p>也可接在体言+の</p><p>以及连体词この、その、あの、どの之后</p><p>ようだ的活用属于形容动词型活用</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.14.2')">活用</h3>
+    <div id="3.14.2" class="content">
+<p>ようだ</p><p>连用形：ようだっ、ようで、ように</p><p>终止形：ようだ</p><p>连体形：ような</p><p>假定形：ようなら</p><p>推量形：ようだろ</p><p>ようです</p><p>连用形：ようでし</p><p>终止形：ようです</p><p>推量形：ようでしょう</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.14.3')">用法</h3>
+    <div id="3.14.3" class="content">
+
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.14.3.1')">活用形用法</h4>
+    <div id="3.14.3.1" class="content">
+<p>// 连用形：</p><p>問題は易しすぎたようで、みんな点数がいい。</p><p>それは偽物のようではないね。</p><p>あの人は日本人のように上手に日本語を話します。</p><p>彼もあまりよく知らないようだった。</p><p>// 终止形：</p><p>彼はまるでスポーツマンのようだ。</p><p>// 连体形：</p><p>彼はうそをつくような人ではない。</p><p>// 假定形：</p><p>どうしてもだめなようなら、早くあきらめなさい。</p><p>// 推量形：</p><p>隣の部屋に誰かいるようだろう。</p></div></div>
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.14.3.2')">意义用法</h4>
+    <div id="3.14.3.2" class="content">
+<p>// 表示比喻</p><p>まるで夢の中にいるようだ。</p><p>// 表示示例</p><p>君のような青年なら、きっと成功するよ。</p><p>// 表示不确切的判断</p><p>雨はもうすぐはれるようだ。</p><p>// 表示要求、愿望和目的</p><p>早く健康になりますように祈ります。</p><p>風邪をひかないように気をつけてください。</p><p>// 表示出现某种倾向或结果</p><p>わが国で作れるようになった。</p></div></div></div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('3.15')">样态助动词そうだ（そうです）（151）</h2>
+    <div id="3.15" class="content">
+<p>表示讲话者观察到、感觉到的某种情形、样子、迹象、趋势等</p><p>今日は晴れそうだ。</p><p>この池は深そうだ。</p><p>この靴は丈夫そうです。</p>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.15.1')">接续</h3>
+    <div id="3.15.1" class="content">
+<p>接在动词/助动词（せる、させる、れる、られる、たがる）的连用形后</p><p>接在形容词/形容动词/助动词（たい、ない）的词干后</p><p>活用与形容动词相同</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.15.2')">用法</h3>
+    <div id="3.15.2" class="content">
+
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.15.2.1')">活用形用法</h4>
+    <div id="3.15.2.1" class="content">
+<p>// 连用型</p><p>あまり寒くて子供が風邪をひきそうで、心配しました。</p><p>子供たちがみなたのしそうに遊んでいる。</p><p>// 终止型</p><p>水はもうなさそうだ。</p><p>この万年筆は良さそうです。</p><p>昨日は雨が降りそうだったが、降らなかった。</p><p>六時までに帰られそうだ。</p><p>あなたはいつみても健康そうですね。</p><p>// 连体型</p><p>雨の降りそうな空模様だ。</p><p>風邪をひきそうな気がする。</p><p>// 假定型</p><p>友達が承知しそうなら、話して見なさい。</p><p>雨が降りそうなら、よしましょう。</p><p>// 推量型</p><p>どうだ、雪でも降りそうだろう。</p><p>英語の発音はなかなか難しそうでしょう。</p></div></div>
+<div class="section">
+    <h4 class="heading" onclick="toggleContent('3.15.2.2')">意义用法</h4>
+    <div id="3.15.2.2" class="content">
+<p>// 接希望助动词(たい)表示“仿佛是”/“希望”/“好像是”等意思</p><p>誰も行きたそうな顔をしていない。</p><p>// 没有未然形，否定形式用连用型そうで接形容词ない</p><p>雨が降りそうで（は）ない</p><p>雨が降りそうで（も）ありません。</p><p>// 东京一带常用这种形式表示样态否定</p><p>雨が降りそうもない</p><p>雨が降りそうもありません。</p><p>// 接否定助动词ない，变成なそうだ的形式</p><p>人が多くてせっかくの映画もよく見られなそうだった。</p><p>// 这种形式比较少见了，一般由下列形式代替</p><p>できそうもない。</p><p>来られそうもなかった。</p><p>入れそうに（も）ない</p><p>勝てそうに（も）ない。</p><p>// 词干可独立使用，多用于女性</p><p>なかなか面白そうね。</p></div></div></div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('3.16')">传闻助动词そうだ（そうです）（155）</h2>
+    <div id="3.16" class="content">
+<p>表示从别处直接或间接听到的信息，或不确切的事情</p><p>試合は十時に始まるそうだ。</p><p>あそこは夏でも涼しいそうです。</p>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.16.1')">接续</h3>
+    <div id="3.16.1" class="content">
+<p>接在用言和助动词（せる、させる、れる、られる、たがる、たい、ない、ぬ（ん）、た、だ）的终止型后</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.16.2')">用法</h3>
+    <div id="3.16.2" class="content">
+<p>// 连用型</p><p>みなさんお元気だそうで、何よりです。</p><p>もう花が咲きましたそうで、一度公園へ遊びに行きましょうか。</p><p>// 终止型</p><p>あの芝居は大変面白いそうです。</p><p>天気予報によると、夕方から雨が降るそうだ。</p><p>彼も来るそうだから、君もお出でよ。</p></div></div></div></div>
+<div class="section">
+    <h2 class="heading" onclick="toggleContent('3.17')">指定助动词だ（です）（157）</h2>
+    <div id="3.17" class="content">
+<p>表示对事物或状态的断定，并增添叙述作用</p><p>ここは銀行だ。</p><p>これは私の本です。</p><p>それは僕のだ。</p>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.17.1')">接续</h3>
+    <div id="3.17.1" class="content">
+<p>接在体言、体言+助词、体言性词组、副词终止型后</p><p>用言连体形、助动词（れる、られる、せる、させる、たがる、ぬ（ん）、ない、たい、らしい、た）、活用连语 + の　＋だ、です</p></div></div>
+<div class="section">
+    <h3 class="heading" onclick="toggleContent('3.17.2')">用法</h3>
+    <div id="3.17.2" class="content">
+<p>// 连用型</p><p>鯨は魚でない</p><p>// 终止型</p><p>それは儚い夢だった。</p><p>あれは確かに学校だ</p><p>会期は月末までだと思います。</p><p>// 连体型</p><p>もう冬なのに、まだ雪が降らない。</p><p>// 假定型</p><p>明日雨なら会場を室内に移しましょう。</p><p>// 推量型</p><p>明日会社は休みだろう。</p><p>その後の様子はどうでしょう。</p></div></div></div></div></div></div>
+<script>
+    function toggleContent(id) {
+        const content = document.getElementById(id);
+        if (content) {
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    }
+    
+    // 初始化折叠所有内容
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.content').forEach(el => {
+            el.style.display = 'none';
+        });
+    });
+</script>
+</body>
+</html>
